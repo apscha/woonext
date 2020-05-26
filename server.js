@@ -22,7 +22,13 @@ app.prepare()
 		const server = express();
 
 		server.get('/getProducts', (req, response) => {
-			WooCommerce.get('products', function(err, data, res) {
+			WooCommerce.get('products?per_page=100', function(err, data, res) {
+				response.json(JSON.parse(res));
+			});
+		});
+
+		server.get('/getCategories', (req, response) => {
+			WooCommerce.get('products/categories', function(err, data, res) {
 				response.json(JSON.parse(res));
 			});
 		});

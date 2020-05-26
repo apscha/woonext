@@ -9,7 +9,9 @@
 	"author": "Christopher Arsenault",
 	"license": "ISC",
 	"dependencies": {
+		"@zeit/next-css": "^1.0.1",
 		"express": "^4.17.1",
+		"isomorphic-unfetch": "^3.0.0",
 		"next": "^9.2.1",
 		"nodemon": "^2.0.2",
 		"react": "^16.12.0",
